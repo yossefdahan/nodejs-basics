@@ -10,7 +10,7 @@ function readFileContentsAsync(filePath) {
 }
 
 function demoAsync() {
-    readFileContentsAsync('data/nums2.txt')
+    readFileContentsAsync('data/nums.txt')
         .then(contents => {
             const nums = contents.split(/\r?\n/).filter(line => line).map(Number)
             const totalSum = nums.reduce((acc, cur) => acc + cur, 0)
